@@ -1,17 +1,30 @@
 extends layout
 
-block content
-		.login.well
-			h1  Please log in...
-			hr
-			form(id='login-form', method='POST', action='/login')
-				.form-group
-					label(for='username') Username
-					input(type='text', name='username', class='form-control', id='username', placeholder='Enter username')
-				.form-group
-					label(for='password') Password
-					input(type='password', name='password', class='form-control', id='password', placeholder='Enter password')
-				.form-group
-					button.btn.btn-default Login  
-					a(href="register") Or Register
-				include messages
+block content_1
+  .login
+    .well
+      h1.centered_text  Login
+      hr
+      form(id='login-form', method='POST', action='/login')
+        .form-group.optional(style='text-align:center')
+          | Don’t have an account? 
+          a(href="register", style='text-decoration:none') Create an account
+          hr
+        .form-group.col-xs-10.centered_item(style="padding-top:15px")
+          label(for='username') Username
+          input(type='text', name='username', class='form-control', id='username', placeholder='Enter username')
+        .form-group.col-xs-10.centered_item(style="padding-top:15px")
+          label(for='password') Password
+          input(type='password', name='password', class='form-control', id='password', placeholder='Enter password')
+        .form-group
+          button.btn.btn-danger.btn_login.btn-lg.center-block Login
+        hr
+        .form-group
+          a.btn_social_login.centered_item.btn.btn-block.btn-social.btn-facebook.btn-lg
+            span.fa.fa-facebook
+            |  Sign in with Facebook
+        .form-group
+          a.btn_social_login.centered_item.btn.btn-block.btn-social.btn-google.btn-lg
+            span.fa.fa-google
+            |  Sign in with Google
+        include message

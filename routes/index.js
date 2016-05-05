@@ -31,6 +31,14 @@ router.get('/register', function(req, res) {
 });
 
 /*
+ * GET main page.
+ */
+
+router.get('/main', function(req, res) {
+    res.render('main', { title: 'Dashboard' });
+});
+
+/*
  * Register new User
  */
  

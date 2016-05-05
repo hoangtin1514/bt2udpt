@@ -1,0 +1,17 @@
+extends layout
+
+block content
+		.login.well
+			h1  Please log in...
+			hr
+			form(id='login-form', method='POST', action='/login')
+				.form-group
+					label(for='username') Username
+					input(type='text', name='username', class='form-control', id='username', placeholder='Enter username')
+				.form-group
+					label(for='password') Password
+					input(type='password', name='password', class='form-control', id='password', placeholder='Enter password')
+				.form-group
+					button.btn.btn-default Login  
+					a(href="register") Or Register
+				include messages

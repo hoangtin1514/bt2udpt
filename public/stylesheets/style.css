@@ -1,8 +1,50 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	width: 100%;
+	background: url('https://i.imgsafe.org/04890ef.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 a {
-  color: #00B7FF;
+	color: #00B7FF;
+}
+
+.well {
+    background: rgba(255,255,255,0.6);
+}
+
+.dashboard{
+	width: 100%;
+	height: 966px;
+	background: url('https://i.imgsafe.org/49bbea6.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.login{
+	padding-top: 50px;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.optional{
+	font-size: 1.2em;
+	padding: 10px 10px 10px 10px;
+}
+
+.btn_social_login{
+	width: 60%;
+}
+.btn_login{
+	margin-top: 20px;
+	width: 60%;
+}
+.centered_text{
+	text-align: center;
+}
+
+.centered_item{
+	margin: 0 auto;
+	float: none;
 }
